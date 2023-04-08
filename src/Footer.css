@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@400;700&display=swap');
+.spartan {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 8px;
+  letter-spacing: 0.73px;
+  color:rgba(255, 255, 255, 0.5) ;
+  text-transform: uppercase;
+}
+.antonio {
+    font-family: "Antonio", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.75px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+  }
+footer{
+    margin-top: 28px;
+    margin-bottom: 47px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer_box{
+    width: 327px;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+}

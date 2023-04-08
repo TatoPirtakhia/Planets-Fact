@@ -2,12 +2,20 @@ import "./App.css";
 import data from "./data.json";
 import { useState } from "react";
 import Main from "./Main";
+import Footer from "./Footer";
 function App() {
   
-  const {name,overview,images} = data[0]
+  const {name,overview,images,rotation,revolution,radius,temperature} = data[0]
+  const [component,setComponent] = useState({
+    rotation:rotation,
+    revolution:revolution,
+    radius:radius,
+    temperature:temperature
+  })
   const [Data,setData] = useState({
     name:name,
     overview:overview.content,
+    source:overview.source,
     image:images.planet
     
   })
@@ -33,6 +41,7 @@ function App() {
       </nav>
     </div>
     <Main data={Data} />
+    <Footer component={component} />
     </>
   );
 }

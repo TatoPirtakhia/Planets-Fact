@@ -10,7 +10,7 @@ function Main(props) {
       <p className="paragraph spartanMedium">{props.data.overview}</p>
       <div className="container">
         <p className="Source spartanMedium">Source : </p>
-        <a href={props.data.overview.source} target="_blank" className="wikipedia spartan">
+        <a href={props.data.source} target="_blank" className="wikipedia spartan">
           Wikipedia
         </a>
         <img src={source} alt="source" />

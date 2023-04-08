@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@400;700&display=swap');
 .spartan {
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
 }
+.antonio {
+    font-family: "Antonio", sans-serif;
+    font-weight: 400;
+  }
 .spartanMedium {
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
 }
-.antonio {
-  font-family: "Antonio", sans-serif;
-  font-weight: 400;
-}
+
 .title {
   font-size: 40px;
   color: rgba(255, 255, 255, 1);
@@ -46,5 +46,6 @@
 .wikipedia{
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 
