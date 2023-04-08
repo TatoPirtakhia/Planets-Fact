@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@700&display=swap");
+.spartan {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.antonio {
+  font-family: "Antonio", sans-serif;
+  font-weight: 400;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  width: 100%;
+  gap: 193px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
-
-.App-link {
-  color: #61dafb;
+.header_title {
+  font-size: 28px;
+  color: #ffffff;
 }
+nav {
+  height: 50px;
+  width: 1005;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.btn {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 9px;
+  line-height: 10px;
+  letter-spacing: 1.9285714626312256px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* border-bottom:4px solid rgba(65, 158, 187, 1) ; */
 }

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@700&display=swap");
+.spartan {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+}
+.spartanMedium {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+}
+.antonio {
+  font-family: "Antonio", sans-serif;
+  font-weight: 400;
+}
+.title {
+  font-size: 40px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+.main {
+  margin-top: 95px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.paragraph {
+  margin-top: 16px;
+  font-size: 11px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  width: 327px;
+}
+.container{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.Source{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.wikipedia{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
