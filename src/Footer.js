@@ -4,20 +4,20 @@ function Footer(props) {
   return (
     <footer>
       <div className="footer_box">
-        <p className="footer_title spartan">ROTATION TIME</p>
-        <span className="antonio">{props.component.rotation}</span>
+        <p className=" Spartan">ROTATION TIME</p>
+        <span className="Antonio">{props.component.rotation}</span>
       </div>
       <div className="footer_box">
-        <p className="footer_title spartan">REVOLUTION TIME</p>
-        <span className="antonio">{props.component.revolution}</span>
+        <p className=" Spartan">REVOLUTION TIME</p>
+        <span className="Antonio">{props.component.revolution}</span>
       </div>
       <div className="footer_box">
-        <p className="footer_title spartan">radius</p>
-        <span className="antonio">{props.component.radius}</span>
+        <p className=" Spartan">radius</p>
+        <span className="Antonio">{props.component.radius}</span>
       </div>
       <div className="footer_box ">
-        <p className="footer_title spartan">AVERAGE TEMP.</p>
-        <span className=" antonio">{props.component.temperature}</span>
+        <p className=" Spartan">AVERAGE TEMP.</p>
+        <span className=" Antonio">{props.component.temperature}</span>
       </div>
     </footer>
   );

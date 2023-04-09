@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@700&display=swap");
 .spartan {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Spartan", sans-serif;
   font-weight: 700;
 }
 .antonio {
   font-family: "Antonio", sans-serif;
   font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.tablet_menu {
+  display: none;
 }
 header {
   display: flex;
@@ -33,6 +41,22 @@ nav {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .btn {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 9px;
+  line-height: 10px;
+  letter-spacing: 1.9285714626312256px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transition: all 0.5s ;
+  /* border-bottom:4px solid rgba(65, 158, 187, 1) ; */
+}
+.clicked_btn{
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 9px;
@@ -41,5 +65,38 @@ nav {
   display: flex;
   align-items: center;
   height: 100%;
-  /* border-bottom:4px solid rgba(65, 158, 187, 1) ; */
+  border-bottom:4px solid rgba(65, 158, 187, 1) ;
+  transition: all 0.5s ;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .tablet_menu {
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .tablet_title {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 }

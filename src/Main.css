@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@400;700&display=swap');
-.spartan {
+@import url("https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@400;700&display=swap");
+.SPartan {
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
 }
-.antonio {
-    font-family: "Antonio", sans-serif;
-    font-weight: 400;
-  }
+.ANtonio {
+  font-family: "Antonio", sans-serif;
+  font-weight: 400;
+}
 .spartanMedium {
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
@@ -33,19 +33,79 @@
   color: rgba(255, 255, 255, 1);
   width: 327px;
 }
-.container{
-    margin-top: 32px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
+.container {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
-.Source{
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.5);
+.Source {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
 }
-.wikipedia{
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
+.wikipedia {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 
+.About {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main_buttons{
+  display: none;
+}
+@media (min-width: 768px) {
+  .main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 130px;
+  }
+  .title {
+    font-size: 48px;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+  .About {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .paragraph {
+    margin-top: 24px;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 327px;
+  }
+  .main_container{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+  .main_buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .mainButtons{
+    width: 281px;
+    height: 40px;
+    border:1px solid rgba(255, 255, 255, 0.2) ;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 15px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1) !important;
+    letter-spacing: 2px !important;
+    cursor: pointer;
+    font-size:9px ;
+  }
+  .buttons_number{
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

@@ -1,35 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@400;700&display=swap');
-.spartan {
+@import url("https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.Spartan {
   font-family: "League Spartan", sans-serif;
   font-weight: 700;
   font-size: 8px;
   letter-spacing: 0.73px;
-  color:rgba(255, 255, 255, 0.5) ;
+  color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
-.antonio {
-    font-family: "Antonio", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: -0.75px;
-    color: rgba(255, 255, 255, 1);
-    text-transform: uppercase;
-  }
-footer{
+.Antonio {
+  font-family: "Antonio", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.75px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+footer {
+  margin-top: 28px;
+  margin-bottom: 47px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer_box {
+  width: 327px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+  footer {
     margin-top: 28px;
     margin-bottom: 47px;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 8px;
-}
-.footer_box{
-    width: 327px;
-    height: 48px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 11px;
+  }
+  .footer_box {
+    width: 164px;
+    height: 88px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     justify-content: space-between;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+  .Antonio {
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+  .Spartan {
+    letter-spacing: 1px;
+  }
 }
