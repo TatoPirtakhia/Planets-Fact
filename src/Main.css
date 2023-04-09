@@ -57,6 +57,18 @@
 .main_buttons{
   display: none;
 }
+.active{
+  display: block;
+  margin-top: -65px;
+}
+.disable{
+  display:none;
+}
+.image{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 @media (min-width: 768px) {
   .main{
     display: flex;
@@ -92,6 +104,8 @@
     gap: 16px;
   }
   .mainButtons{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
     width: 281px;
     height: 40px;
     border:1px solid rgba(255, 255, 255, 0.2) ;
@@ -104,8 +118,28 @@
     letter-spacing: 2px !important;
     cursor: pointer;
     font-size:9px ;
+    cursor: pointer;
+  }
+  .clicked_mainButtons{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    width: 281px;
+    height: 40px;
+    border:1px solid rgba(255, 255, 255, 0.2) ;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 15px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1) !important;
+    letter-spacing: 2px !important;
+    cursor: pointer;
+    font-size:9px ;
+    background-color: rgba(65, 158, 187, 1);
+    cursor: pointer;
   }
   .buttons_number{
     color: rgba(255, 255, 255, 0.5);
   }
+ 
 }

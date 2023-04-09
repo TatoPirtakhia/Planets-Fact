@@ -4,8 +4,17 @@ import { useState } from "react";
 import Main from "./Main";
 import Footer from "./Footer";
 function App() {
-  const { name, overview, images, rotation, revolution, radius, temperature } =
-    data[0];
+  const {
+    name,
+    overview,
+    images,
+    rotation,
+    revolution,
+    radius,
+    temperature,
+    structure,
+    geology,
+  } = data[0];
   const [overviewBOrder, setOverviewBorder] = useState(true);
   const [structureBorder, setStructureBorder] = useState(false);
   const [surfaceBorder, setSurfaceBorder] = useState(false);
@@ -20,21 +29,43 @@ function App() {
     overview: overview.content,
     source: overview.source,
     image: images.planet,
+    image2: images.planet,
   });
   const Overview = () => {
     setOverviewBorder(true);
     setStructureBorder(false);
     setSurfaceBorder(false);
+    setData({
+      name: name,
+      overview: overview.content,
+      source: overview.source,
+      image: images.planet,
+      image2: images.planet,
+    });
   };
   const Structure = () => {
     setOverviewBorder(false);
     setStructureBorder(true);
     setSurfaceBorder(false);
+    setData({
+      name: name,
+      overview: structure.content,
+      source: structure.source,
+      image: images.internal,
+      image2: images.planet,
+    });
   };
   const Surface = () => {
     setOverviewBorder(false);
     setStructureBorder(false);
     setSurfaceBorder(true);
+    setData({
+      name: name,
+      overview: geology.content,
+      source: geology.source,
+      image2: images.geology,
+      image: images.planet,
+    });
   };
   return (
     <>
@@ -83,7 +114,15 @@ function App() {
           </p>
         </nav>
       </div>
-      <Main data={Data} />
+      <Main
+        data={Data}
+        overviewBOrder={overviewBOrder}
+        structureBorder={structureBorder}
+        surfaceBorder={surfaceBorder}
+        Overview={Overview}
+        Structure={Structure}
+        Surface={Surface}
+      />
       <Footer component={component} />
     </>
   );
