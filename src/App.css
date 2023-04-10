@@ -29,17 +29,74 @@ header {
   font-size: 28px;
   color: #ffffff;
 }
-nav {
+
+.Active {
   height: 50px;
-  width: 1005;
+  width: 105;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
+.Disable {
+  display: none;
+}
+
+.mobile_planets {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-top: 44px;
+  padding-bottom: 67px;
+  gap: 46px;
+  overflow: hidden;
+}
+
+.mobile_planets_name {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+
+.mobile_box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.mercury {
+  background-color: rgba(222, 244, 252, 1);
+}
+.venus {
+  background-color: rgba(247, 204, 127, 1);
+}
+.earth {
+  background-color: rgba(84, 91, 254, 1);
+}
+.mars {
+  background-color: rgba(255, 106, 69, 1);
+}
+.jupiter {
+  background-color: rgba(236, 173, 122, 1);
+}
+.saturn {
+  background-color: rgba(252, 203, 107, 1);
+}
+.uranus {
+  background-color: rgba(101, 240, 213, 1);
+}
+.neptune {
+  background-color: rgba(73, 126, 250, 1);
+}
+
 .btn {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
@@ -51,10 +108,10 @@ nav {
   display: flex;
   align-items: center;
   height: 100%;
-  transition: all 0.5s ;
+  transition: all 0.5s;
   /* border-bottom:4px solid rgba(65, 158, 187, 1) ; */
 }
-.clicked_btn{
+.clicked_btn {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
   color: #ffffff;
@@ -65,15 +122,15 @@ nav {
   display: flex;
   align-items: center;
   height: 100%;
-  border-bottom:4px solid rgba(65, 158, 187, 1) ;
-  transition: all 0.5s ;
+  border-bottom: 4px solid rgba(65, 158, 187, 1);
+  transition: all 0.5s;
 }
 
 @media (min-width: 768px) {
   .hamburger {
     display: none;
   }
-  nav {
+  .Active {
     display: none;
   }
   .tablet_menu {
@@ -83,7 +140,9 @@ nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     width: 100%;
     padding-bottom: 30px;
+    
   }
+ 
   header {
     display: flex;
     align-items: center;
@@ -98,5 +157,6 @@ nav {
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-decoration: none;
   }
 }
