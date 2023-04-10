@@ -54,7 +54,7 @@ function Planet(props) {
           </p>
         </div>
         <div className={props.active ? "mobile_planets" : "Disable"}>
-          <div className="mobile_box">
+          <div className="mobile_box Mercury">
             <div className="circle mercury"></div>
             <Link onClick={props.activeButton} to="/mercury" className="mobile_planets_name spartan">
               mercury

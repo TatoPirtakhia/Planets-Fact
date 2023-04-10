@@ -3,6 +3,9 @@
   font-family: "Spartan", sans-serif;
   font-weight: 700;
 }
+body{
+  overflow: visible;
+}
 .antonio {
   font-family: "Antonio", sans-serif;
   font-weight: 400;
@@ -48,11 +51,17 @@ header {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  position: absolute;
+  height: 100%;
+  top: 68px;
+  width: 100%;
+  padding-bottom: 100px;
+  padding-top: 0px;
   padding-left: 24px;
-  padding-top: 44px;
-  padding-bottom: 67px;
-  gap: 46px;
+  gap: 23px;
   overflow: hidden;
+  background-color: #070724;
+  border-top:1px solid rgba(255, 255, 255, 0.1);
 }
 
 .mobile_planets_name {
@@ -66,6 +75,13 @@ header {
   display: flex;
   align-items: center;
   gap: 25px;
+  width: 327px;
+  border-top:1px solid rgba(255, 255, 255, 0.1);
+  height: 65px;
+  padding-top: 22px;
+}
+.Mercury{
+  border-top: none;
 }
 .circle {
   width: 20px;
@@ -74,6 +90,7 @@ header {
 }
 .mercury {
   background-color: rgba(222, 244, 252, 1);
+
 }
 .venus {
   background-color: rgba(247, 204, 127, 1);

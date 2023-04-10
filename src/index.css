@@ -8,7 +8,7 @@ body {
   background-image: url("./images/background-stars.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  
+  overflow: visible;
   width: 100%;
 }
 
