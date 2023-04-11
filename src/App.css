@@ -177,3 +177,39 @@ header {
     text-decoration: none;
   }
 }
+
+@media (min-width:1440px) {
+  .tablet_menu {
+    display: flex;
+    justify-content: center;
+    gap:33px;
+    border-bottom: none;
+    width: auto;
+    padding-bottom: 0px;
+    
+  }
+ 
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 40px;
+    height: 85px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-right: 40px;
+  }
+  .tablet_title {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+}

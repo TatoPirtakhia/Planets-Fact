@@ -5,7 +5,7 @@ function Main(props) {
   return (
     <div className="main">
       <div className="image">
-        <img width="200" height="200" src={props.button == "overview" ? require(`${props.images.planet}`):props.button == "structure"?require(`${props.images.internal}`):require(`${props.images.planet}`) } alt="mercury" />
+        <img width="290" height="290" src={props.button == "overview" ? require(`${props.images.planet}`):props.button == "structure"?require(`${props.images.internal}`):require(`${props.images.planet}`) } alt="mercury" />
         <div className={props.button == "surface" ? "active" : "disable"}>
           <img src={require(`${props.images.geology}`)} width="140" height="165" alt="mercury" />
         </div>

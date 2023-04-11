@@ -143,3 +143,46 @@
   }
  
 }
+
+@media (min-width:1440px) {
+  .main {
+    margin-top: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 300px;
+  }
+  .main_container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .title{
+    font-size: 80px;
+    padding-bottom: 0;
+  }
+  .paragraph{
+    font-size: 14px;
+    line-height: 25px;
+    width: 350px;
+    margin-top: 23px;
+  }
+  .clicked_mainButtons{
+    font-size: 14px;
+    width: 350px;
+    padding-left: 30px;
+    gap: 30px;
+  }
+  .mainButtons{
+    font-size: 14px;
+    width: 350px;
+    padding-left: 30px;
+    gap: 30px;
+  }
+  .Source,.wikipedia{
+    font-size: 14px;
+  }
+
+}

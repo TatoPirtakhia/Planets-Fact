@@ -70,3 +70,36 @@ footer {
     letter-spacing: 1px;
   }
 }
+
+@media ( min-width:1440px) {
+  footer {
+    margin-top: 87px;
+    margin-bottom: 56px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+  .footer_box {
+    width: 255px;
+    height: 128px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 27px;
+    padding-left: 23px;
+    padding-right: 0px;
+  }
+  .Antonio {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+  .Spartan {
+    letter-spacing: 1px;
+    font-size: 11px;
+  }
+}
