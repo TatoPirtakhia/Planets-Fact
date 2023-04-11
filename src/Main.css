@@ -69,6 +69,12 @@
   align-items: center;
   flex-direction: column;
 }
+
+:root {
+  --my-background-color:'';
+}
+
+
 @media (min-width: 768px) {
   .main{
     display: flex;
@@ -135,7 +141,7 @@
     letter-spacing: 2px !important;
     cursor: pointer;
     font-size:9px ;
-    background-color: rgba(65, 158, 187, 1);
+    background-color: var(--my-background-color);
     cursor: pointer;
   }
   .buttons_number{

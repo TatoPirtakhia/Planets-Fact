@@ -113,7 +113,9 @@ header {
 .neptune {
   background-color: rgba(73, 126, 250, 1);
 }
-
+:root {
+  --my-background-color:rgba(65, 158, 187, 1);
+}
 .btn {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
@@ -139,7 +141,7 @@ header {
   display: flex;
   align-items: center;
   height: 100%;
-  border-bottom: 4px solid rgba(65, 158, 187, 1);
+  border-bottom: 4px solid var(--my-background-color);
   transition: all 0.5s;
 }
 
@@ -170,7 +172,6 @@ header {
     font-size: 11px;
     color: rgba(255, 255, 255, 1);
     line-height: 25px;
-    letter-spacing: 1px;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 1px;

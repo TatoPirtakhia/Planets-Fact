@@ -1,5 +1,4 @@
 import "./App.css";
-import { useEffect } from "react";
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 import Planet from "./Planet";
 import { useState } from "react";
